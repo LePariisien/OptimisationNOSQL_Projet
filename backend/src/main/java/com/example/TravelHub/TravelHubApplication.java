@@ -1,13 +1,13 @@
-package com.example.OptimisationNOSQL;
+package com.example.TravelHub;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OptimisationNosqlApplication {
+public class TravelHubApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OptimisationNosqlApplication.class, args);
+		SpringApplication.run(TravelHubApplication.class, args);
 	}
 
 }

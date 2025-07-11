@@ -1,4 +1,4 @@
-package com.example.OptimisationNOSQL.Entities;
+package com.example.TravelHub.Entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,28 +21,28 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "sessions")
 public class Session {
-    
+
     @Id
     @org.springframework.data.neo4j.core.schema.Id
     @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    
+
     @Property("sessionToken")
     private String sessionToken;
-    
+
     @Property("userId")
     private String userId;
-    
+
     @Property("userEmail")
     private String userEmail;
-    
+
     @Property("userName")
     private String userName;
-    
+
     @Property("sessionStart")
     private LocalDateTime sessionStart;
-    
+
     @Property("sessionEnd")
     private LocalDateTime sessionEnd;
 
