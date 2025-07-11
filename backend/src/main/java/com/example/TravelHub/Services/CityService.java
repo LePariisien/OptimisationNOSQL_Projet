@@ -1,8 +1,9 @@
 
-package com.example.OptimisationNOSQL.Services;
+package com.example.TravelHub.Services;
 
-import com.example.OptimisationNOSQL.Entities.City;
-import com.example.OptimisationNOSQL.Repositories.MongoDB.CityMongoRepository;
+import com.example.TravelHub.Entities.City;
+import com.example.TravelHub.Repositories.neo4j.CityRepository;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,9 +11,9 @@ import java.util.Optional;
 
 @Service
 public class CityService {
-    private final CityMongoRepository cityRepository;
+    private final CityRepository cityRepository;
 
-    public CityService(CityMongoRepository cityRepository) {
+    public CityService(CityRepository cityRepository) {
         this.cityRepository = cityRepository;
     }
 

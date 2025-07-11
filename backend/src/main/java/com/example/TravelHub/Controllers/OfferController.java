@@ -1,7 +1,7 @@
-package com.example.OptimisationNOSQL.Controllers;
+package com.example.TravelHub.Controllers;
 
-import com.example.OptimisationNOSQL.Entities.Offer;
-import com.example.OptimisationNOSQL.Services.OfferService;
+import com.example.TravelHub.Entities.Offer;
+import com.example.TravelHub.Services.OfferService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,21 +26,6 @@ public class OfferController {
         return offerService.getOfferById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
-    }
-
-    @GetMapping("/from/{from}")
-    public List<Offer> getOffersByFrom(@PathVariable String from) {
-        return offerService.getOffersByFrom(from);
-    }
-
-    @GetMapping("/to/{to}")
-    public List<Offer> getOffersByTo(@PathVariable String to) {
-        return offerService.getOffersByTo(to);
-    }
-
-    @GetMapping("/provider/{provider}")
-    public List<Offer> getOffersByProvider(@PathVariable String provider) {
-        return offerService.getOffersByProvider(provider);
     }
 
     @PostMapping

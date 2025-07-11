@@ -1,7 +1,7 @@
-package com.example.OptimisationNOSQL.Controllers;
+package com.example.TravelHub.Controllers;
 
-import com.example.OptimisationNOSQL.Entities.City;
-import com.example.OptimisationNOSQL.Services.CityService;
+import com.example.TravelHub.Entities.City;
+import com.example.TravelHub.Services.CityService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
