@@ -16,7 +16,7 @@ import jakarta.persistence.GenerationType;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "cities")
+@Document(collection = "City")
 @Node("City") 
 @RedisHash("City")
 @Entity
