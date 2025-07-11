@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: travelhub
+  data:
+    mongodb:
+      uri: ${SPRING_DATA_MONGODB_URI}
+  redis:
+    host: ${SPRING_REDIS_HOST}
+    port: ${SPRING_REDIS_PORT}
+
+neo4j:
+  uri: ${NEO4J_URI}
+  authentication:
+    username: ${NEO4J_USERNAME}
+    password: ${NEO4J_PASSWORD}

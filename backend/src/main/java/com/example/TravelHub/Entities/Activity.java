@@ -1,4 +1,4 @@
-package com.example.OptimisationNOSQL.Entities;
+package com.example.TravelHub.Entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Activity {
-    
-    private String title;    
+
+    private String title;
     private BigDecimal price;
 }
