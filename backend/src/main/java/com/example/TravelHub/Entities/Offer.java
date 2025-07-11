@@ -1,4 +1,4 @@
-package com.example.OptimisationNOSQL.Entities;
+package com.example.TravelHub.Entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,41 +23,41 @@ import java.util.List;
 @Entity
 @Table(name = "offers")
 public class Offer {
-    
+
     @Id
     @org.springframework.data.neo4j.core.schema.Id
     @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    
+
     @Property("from")
-    private String from;            
-    
+    private String from;
+
     @Property("to")
-    private String to;              
-    
+    private String to;
+
     @Property("departDate")
-    private LocalDate departDate;   
-    
+    private LocalDate departDate;
+
     @Property("returnDate")
-    private LocalDate returnDate;   
-    
+    private LocalDate returnDate;
+
     @Property("provider")
-    private String provider;       
-    
+    private String provider;
+
     @Property("price")
-    private BigDecimal price;       
-    
+    private BigDecimal price;
+
     @Property("currency")
-    private String currency;        
-    
+    private String currency;
+
     @Property("legs")
-    private List<FlightLeg> legs;   
-    
+    private List<FlightLeg> legs;
+
     @Property("hotel")
-    private Hotel hotel;            
-    
+    private Hotel hotel;
+
     @Property("activity")
-    private Activity activity;     
+    private Activity activity;
 
 }
